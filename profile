@@ -29,13 +29,20 @@ alias gitx='gitx --all'
 
 # Other custom aliases
 alias e='mate'
-alias ls='ls -FG'
-alias ll='ls -l'
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias ..='cd ..'
+alias ...='cd ../..'
 alias refresh='cd && cd ~-'
+
 alias be='bundle exec'
 alias bop='bundle open'
 alias wip='bundle exec cucumber -p wip'
 alias rbp_report='rails_best_practices -f html --with-textmate && open rails_best_practices_output.html'
+alias fanstop='sudo /etc/init.d/i8kmon stop'
 
 # Enable programmable completion features for ports
 if [ -f `brew --prefix`/etc/bash_completion ]; then
